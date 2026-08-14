@@ -1,0 +1,7 @@
+import yfinance as yf
+
+tcs = yf.Ticker("TCS.NS")
+
+price = tcs.fast_info["last_price"]
+
+print("TCS price:", price)
